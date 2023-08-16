@@ -17,32 +17,8 @@ The objective of this task is to develop a temperature and humidity measuring sy
 
 **2. Software Setup:**
 
- **2.1 PHP Script (Save_data.php):**
-- This script is responsible for receiving GET requests and saving the data into a MySQL database.
 
-```php
-<?php
-
-$conn = mysqli_connect("localhost", "root", '', "iot");
-
-if (mysqli_connect_errno()) {
-    die('Unable to connect to database ' . mysqli_connect_error());
-}
-
-$temperature = $_GET['temperature'];
-$humidity = $_GET['humidity'];
-
-$qry = $conn->prepare("INSERT INTO dht_sensor (temperature, humidity) VALUES ('" . $temperature . "','" . $humidity . "')");
-
-If ($qry->execute()) {
-    echo "Operation Successful";
-    } else {
-    echo "Operation Failed";
-    }
-?>
-```
-
-**2.2 Arduino Code for ESP32:**
+ **2.1 Arduino Code for ESP32:**
 - This code reads the temperature and humidity from the DHT11 sensor and sends the data to the PHP script using HTTP GET requests.
 
 ```cpp
@@ -139,3 +115,32 @@ void connectToWifi()
   Serial.println(WiFi.localIP());
 }
 ```
+
+![3](https://github.com/LatifahAbuhamamah/Temperature-and-Humidity-with-ESP32-and-DHT11-using-GET-Requests/blob/main/imagesss/URL.png)
+
+
+ **2.2 PHP Script (Save_data.php):**
+- This script is responsible for receiving GET requests and saving the data into a MySQL database.
+
+```php
+<?php
+
+$conn = mysqli_connect("localhost", "root", '', "iot");
+
+if (mysqli_connect_errno()) {
+    die('Unable to connect to database ' . mysqli_connect_error());
+}
+
+$temperature = $_GET['temperature'];
+$humidity = $_GET['humidity'];
+
+$qry = $conn->prepare("INSERT INTO dht_sensor (temperature, humidity) VALUES ('" . $temperature . "','" . $humidity . "')");
+
+If ($qry->execute()) {
+    echo "Operation Successful";
+    } else {
+    echo "Operation Failed";
+    }
+?>
+```
+
