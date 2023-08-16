@@ -12,6 +12,7 @@ The objective of this task is to develop a temperature and humidity measuring sy
    - Connect the sensor's DATA pin to a digital pin (e.g., pin 21) on the ESP32.
   
 ![1](https://github.com/LatifahAbuhamamah/Temperature-and-Humidity-with-ESP32-and-DHT11-using-GET-Requests/blob/main/imagesss/Dht11-1.jpg)
+
 ![2](https://github.com/LatifahAbuhamamah/Temperature-and-Humidity-with-ESP32-and-DHT11-using-GET-Requests/blob/main/imagesss/Dht11-2.jpg)
 
 **2. Software Setup:**
