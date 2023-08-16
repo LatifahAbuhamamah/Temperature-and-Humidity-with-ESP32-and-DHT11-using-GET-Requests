@@ -144,3 +144,4 @@ If ($qry->execute()) {
 ?>
 ```
 
+![4](https://github.com/LatifahAbuhamamah/Temperature-and-Humidity-with-ESP32-and-DHT11-using-GET-Requests/blob/main/imagesss/database.png)
