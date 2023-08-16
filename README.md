@@ -6,7 +6,7 @@ The objective of this task is to develop a temperature and humidity measuring sy
 **1. Hardware Setup:**
 - ESP32 microcontroller
 - DHT11 temperature and humidity sensor
-- Connect the DHT11 sensor to the ESP32:
+- Then, Connect the DHT11 sensor to the ESP32:
    - Connect the sensor's VCC pin to a 3.3V power source on the ESP32.
    - Connect the sensor's GND pin to the GND pin on the ESP32.
    - Connect the sensor's DATA pin to a digital pin (e.g., pin 21) on the ESP32.
