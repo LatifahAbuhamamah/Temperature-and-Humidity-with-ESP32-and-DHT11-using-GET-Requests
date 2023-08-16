@@ -1,9 +1,9 @@
 # Temperature-and-Humidity-with-ESP32-and-DHT11-using-GET-Requests
 The objective of this task is to develop a temperature and humidity measuring system for the robot utilizing an ESP32 microcontroller and a DHT11 sensor. The collected data is transmitted to a server through HTTP GET requests, and a server-side PHP script receives and records the data into a MySQL database.
 
-**Steps:**
+### Steps:
 
-**1. Hardware Setup:**
+#### 1. Hardware Setup:
 - ESP32 microcontroller
 - DHT11 temperature and humidity sensor
 - Then, Connect the DHT11 sensor to the ESP32:
@@ -15,10 +15,10 @@ The objective of this task is to develop a temperature and humidity measuring sy
 
 ![2](https://github.com/LatifahAbuhamamah/Temperature-and-Humidity-with-ESP32-and-DHT11-using-GET-Requests/blob/main/imagesss/Dht11-2.jpg)
 
-**2. Software Setup:**
+#### 2. Software Setup:
 
 
- **2.1 Arduino Code for ESP32:**
+ 2.1 Arduino Code for ESP32:
 *This code reads the temperature and humidity from the DHT11 sensor and sends the data to the PHP script using HTTP GET requests.*
 
 ```cpp
@@ -127,7 +127,7 @@ void connectToWifi()
 - If the Wi-Fi connection is lost, the ESP32 attempts to reconnect.
 
 
- **2.2 PHP Script (Save_data.php):**
+ 2.2 PHP Script (Save_data.php):
 *This script is responsible for receiving GET requests and saving the data into a MySQL database*.
 
 ```php
