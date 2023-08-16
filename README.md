@@ -19,7 +19,7 @@ The objective of this task is to develop a temperature and humidity measuring sy
 
 
  **2.1 Arduino Code for ESP32:**
-**This code reads the temperature and humidity from the DHT11 sensor and sends the data to the PHP script using HTTP GET requests.*
+*This code reads the temperature and humidity from the DHT11 sensor and sends the data to the PHP script using HTTP GET requests.*
 
 ```cpp
 #include <WiFi.h>
@@ -128,7 +128,7 @@ void connectToWifi()
 
 
  **2.2 PHP Script (Save_data.php):**
-**This script is responsible for receiving GET requests and saving the data into a MySQL database*.
+*This script is responsible for receiving GET requests and saving the data into a MySQL database*.
 
 ```php
 <?php
