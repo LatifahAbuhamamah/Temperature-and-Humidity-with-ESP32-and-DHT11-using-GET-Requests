@@ -9,7 +9,7 @@ const char ssid[] = "xxxxxxxx";
 const char password[] = "xxxxxxx";
 
 String HOST_NAME = "http://192.168.0.222"; 
-String PATH_NAME = "/iot/Save_data.php?";
+String PATH_NAME = "/IOT/Save_data.php?";
 // String queryString = "temperature=45&humidity=20";
 
 byte connectingCounter = 0;
