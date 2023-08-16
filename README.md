@@ -115,8 +115,17 @@ void connectToWifi()
   Serial.println(WiFi.localIP());
 }
 ```
+- The code includes the necessary libraries for Wi-Fi, HTTP communication, and interfacing with the DHT11 sensor.
+- The DHT11 sensor is initialized and configured to read temperature and humidity data.
+- The ESP32 connects to the Wi-Fi network using the provided SSID and password.
+- Inside the loop, the code reads temperature and humidity data from the DHT11 sensor.
+- The data is converted into strings with a specified number of decimal places.
+- An HTTPClient is used to create an HTTP GET request with the temperature and humidity data as parameters.
+- The request is sent to the specified server and path.
+- If the server responds with a valid HTTP status code, the payload (response content) is printed to the Serial Monitor.
+- If there is a connection error, an error message is printed to the Serial Monitor.
+- If the Wi-Fi connection is lost, the ESP32 attempts to reconnect.
 
-![3](https://github.com/LatifahAbuhamamah/Temperature-and-Humidity-with-ESP32-and-DHT11-using-GET-Requests/blob/main/imagesss/URL.png)
 
 
  **2.2 PHP Script (Save_data.php):**
@@ -143,5 +152,11 @@ If ($qry->execute()) {
     }
 ?>
 ```
+- The PHP script connects to a MySQL database to establish a connection for data storage.
+- It receives temperature and humidity data through HTTP GET requests.
+- The received data is sanitized and prepared for insertion into the database.
+- An SQL query is prepared to insert the data into the designated table.
+- If the data insertion is successful, the script echoes "Operation Successful." Otherwise, it echoes "Operation Failed."
 
+![3](https://github.com/LatifahAbuhamamah/Temperature-and-Humidity-with-ESP32-and-DHT11-using-GET-Requests/blob/main/imagesss/URL.png)
 ![4](https://github.com/LatifahAbuhamamah/Temperature-and-Humidity-with-ESP32-and-DHT11-using-GET-Requests/blob/main/imagesss/database.png)
